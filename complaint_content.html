@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Page Title-->
+    <title>مرسل</title>
+    <link rel="shortcut icon" type="icon" href="assets/img/icon.png" />
+    
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/additions/bootstrap/bootstrap-4.3.1/dist/css/bootstrap.min.css" />
+
+    <!--Fonts-->
+    <link rel="stylesheet" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/fonts/montserrat/css/montserrat-webfont.min.css" />
+    <link rel="stylesheet" href="assets/fonts/open-sans/open-sans.css" />
+
+    <!--Css-->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/general.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/complaints.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/loader.css" />
+    
+    <!--Jquery-->
+    <script src="assets/additions/jquery/jquery-3.2.1.min.js"></script>
+
+    <!--JavaScript-->
+    <script src="assets/js/general.js"></script>
+    <script src="assets/js/complaints.js"></script>
+ <style>
+   p{
+     color:#818181;
+   }
+    .content{
+        display: none;
+    }
+        
+</style>
+</head>
+<body>
+<div class="preload">
+    <div id="loader2" class="loader"></div>
+    <div id="loader3" class="loader"></div>
+    <div id="loader4" class="loader"></div>
+    <div id="loader5" class="loader"></div>
+
+</div>
+<div class="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                &nbsp &nbsp&nbsp &nbsp
+                <button onmousedown="togglenav()" class="navbar-toggler" type="button" data-toggle="" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                &nbsp &nbsp
+                <a class="navbar-brand" href="index.html" style="font-size:24.5px; color:#818181;"><i class="fa fa-paper-plane" style="color:rgb(53, 218, 32);"></i>&nbsp &nbsp مرسل</a>
+                <div class="admin"></div>
+                <h5 style="font-size:15px;">&nbsp &nbsp Admin Name &nbsp &nbsp&nbsp &nbsp</h5>
+                <i data-toggle="modal" data-target="#myModal" class="fa fa-envelope-o" style="font-size:30px; color:rgb(53, 218, 32); cursor: pointer;" data-toggle="modal" data-target="#exampleModal"></i>
+                
+        </nav>
+
+        <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog">
+            
+                            <!-- Modal content-->
+                            <div class="modal-content" style="background-color:#fff;">
+                                <div class="modal-header">
+                                                <h4 class="modal-title" style="color: #d3d2d2">رسالة جماعية</h4>
+                                    <button type="button" class="close pull-right" data-dismiss="modal">&times;&nbsp &nbsp</button>
+                                </div>
+                                <div class="modal-body">
+                                    <h2 style="color: rgb(53, 218, 32);" class="pull-right"> : محتوى الرسالة </h2>
+                                    <form class="form-horizontal" action="includes/Signup.Inc.php" method="post" name="myForm" onsubmit="return validateForm()" enctype="multipart/form-data">
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+                                                <textarea class="form-control" id="name" name="name" style="color: black; font-size: 18px; margin-top: 20px; height: 300px; " ></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                                        <button type="submit" name="submit" onclick="validateForm" class="btn btn-default pull-left">ارسل</button>
+                                                    </div>
+                                        </form>
+                                        </div>
+                                        </div>
+                                        </div></div>
+
+
+        <div class="container-fluied">
+            <div class="row">
+                <div class="col-md-3 col-sm-12">
+                    <div class="sidebar" id="mySidebar">    
+                             <a href="index.html"><i class="fa fa-dashboard"><span style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size:15px; font-weight: bold; color: black;">&nbsp &nbspالصفحة الرئيسية</span></i></a>
+                            <hr>
+                            <a href="complaint.html"><i class="fa fa-warning active"><span style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size:15px; font-weight: bold; color:black;">&nbsp &nbspالشكاوى</span></i></a>
+                            <hr>
+                            </li><a href="drivers.html"><i class="fa fa-car"><span style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size:15px;font-weight: bold;color:black;">&nbsp &nbspالسائقين</span></i></a>
+                            <hr>
+                             <a href="users.html"><i class="fa fa-users"><span style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size:15px;font-weight: bold;color:black;">&nbsp &nbspالمستخدمين</span></i></a>
+                            <hr>
+                             <a href="travels.html"><i class="fa fa-suitcase"><span style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size:15px;font-weight: bold;color:black;">&nbsp &nbspالرحلات</span></i></a>
+                            <hr>
+                            <form action="login.html">
+                                <a href="" type="submit"><i class="fa fa-reply"><span style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size:15px;font-weight: bold;color:black;">&nbsp &nbspتسحيل الخروج</span></i></a>     
+                                 <hr>
+                         </form>    
+                                   
+                    </div>
+                    </div>
+                    <div class="col-md-9 col-sm-12 complaints" style="height: 500px; margin-top:30px;">
+
+                            <div class="box box-primary">
+                                    <div class="box-header with-border">
+                                      <h3 style="color:#818181; margin-top: 30px;" class="box-title pull-right">محتوى الشكوى</h3>
+                                      <br>
+                        
+                                      
+                                    </div>
+                                    <!-- /.box-header -->
+                                    <div class="box-body no-padding">
+                                      <div class="mailbox-read-info">
+                                        <h3 style="color:rgb(53, 218, 32); margin-top: 30px;">عنوان الشكوى</h3>
+                                        <br>
+                                        <h5>From: help@example.com
+                                          <span class="mailbox-read-time pull-right">15 Feb. 2016 11:03 PM</span></h5>
+                                      </div>
+                                      <br>
+                                      
+                                      <!-- /.mailbox-read-info -->
+                                      
+                                      <!-- /.mailbox-controls -->
+                                      <div class="mailbox-read-message">
+                                        <p>Hello John,</p>
+                        
+                                        <p>Keffiyeh blog actually fashion axe vegan, irony biodiesel. Cold-pressed hoodie chillwave put a bird
+                                          on it aesthetic, bitters brunch meggings vegan iPhone. Dreamcatcher vegan scenester mlkshk. Ethical
+                                          master cleanse Bushwick, occupy Thundercats banjo cliche ennui farm-to-table mlkshk fanny pack
+                                          gluten-free. Marfa butcher vegan quinoa, bicycle rights disrupt tofu scenester chillwave 3 wolf moon
+                                          asymmetrical taxidermy pour-over. Quinoa tote bag fashion axe, Godard disrupt migas church-key tofu
+                                          blog locavore. Thundercats cronut polaroid Neutra tousled, meh food truck selfies narwhal American
+                                          Apparel.</p>
+                        
+                                        <p>Raw denim McSweeney's bicycle rights, iPhone trust fund quinoa Neutra VHS kale chips vegan PBR&amp;B
+                                          literally Thundercats +1. Forage tilde four dollar toast, banjo health goth paleo butcher. Four dollar
+                                          toast Brooklyn pour-over American Apparel sustainable, lumbersexual listicle gluten-free health goth
+                                          umami hoodie. Synth Echo Park bicycle rights DIY farm-to-table, retro kogi sriracha dreamcatcher PBR&amp;B
+                                          flannel hashtag irony Wes Anderson. Lumbersexual Williamsburg Helvetica next level. Cold-pressed
+                                          slow-carb pop-up normcore Thundercats Portland, cardigan literally meditation lumbersexual crucifix.
+                                          Wayfarers raw denim paleo Bushwick, keytar Helvetica scenester keffiyeh 8-bit irony mumblecore
+                                          whatever viral Truffaut.</p>
+                        
+                                        <p>Post-ironic shabby chic VHS, Marfa keytar flannel lomo try-hard keffiyeh cray. Actually fap fanny
+                                          pack yr artisan trust fund. High Life dreamcatcher church-key gentrify. Tumblr stumptown four dollar
+                                          toast vinyl, cold-pressed try-hard blog authentic keffiyeh Helvetica lo-fi tilde Intelligentsia. Lomo
+                                          locavore salvia bespoke, twee fixie paleo cliche brunch Schlitz blog McSweeney's messenger bag swag
+                                          slow-carb. Odd Future photo booth pork belly, you probably haven't heard of them actually tofu ennui
+                                          keffiyeh lo-fi Truffaut health goth. Narwhal sustainable retro disrupt.</p>
+                        
+                                        <p>Skateboard artisan letterpress before they sold out High Life messenger bag. Bitters chambray
+                                          leggings listicle, drinking vinegar chillwave synth. Fanny pack hoodie American Apparel twee. American
+                                          Apparel PBR listicle, salvia aesthetic occupy sustainable Neutra kogi. Organic synth Tumblr viral
+                                          plaid, shabby chic single-origin coffee Etsy 3 wolf moon slow-carb Schlitz roof party tousled squid
+                                          vinyl. Readymade next level literally trust fund. Distillery master cleanse migas, Vice sriracha
+                                          flannel chambray chia cronut.</p>
+                        
+                                        <p>Thanks,<br>Jane</p>
+                                      </div>
+                                      <!-- /.mailbox-read-message -->
+                                    </div>
+                                    <!-- /.box-body -->
+                                   
+                                  </div>
+                          
+            </div>
+</div>
+</div>
+</div>
+            <script>
+                $(function(){
+                    $(".preload").fadeOut(5000,function(){
+                        $(".content").fadeIn(500);
+                        $(".content").css("display:block");
+                    });
+                });
+            </script>
+</body>
+</html>

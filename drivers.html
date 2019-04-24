@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Page Title-->
+    <title>مرسل</title>
+    <link rel="shortcut icon" type="icon" href="assets/img/icon.png" />
+    
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/additions/bootstrap/bootstrap-4.3.1/dist/css/bootstrap.min.css" />
+
+    <!--Fonts-->
+    <link rel="stylesheet" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/fonts/montserrat/css/montserrat-webfont.min.css" />
+    <link rel="stylesheet" href="assets/fonts/open-sans/open-sans.css" />
+
+    <!--Css-->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/general.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/complaints.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/drivers.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/loader.css" />
+    
+    <!--Jquery-->
+    <script src="assets/additions/jquery/jquery-3.2.1.min.js"></script>
+
+    <!--JavaScript-->
+    <script src="assets/js/general.js"></script>
+    <script src="assets/js/complaints.js"></script>
+ <style>
+   .checked{
+     color:rgb(15, 190, 15);
+   }
+    .content{
+        display: none;
+    }
+        
+</style>
+</head>
+<body>
+<div class="preload">
+    <div id="loader2" class="loader"></div>
+    <div id="loader3" class="loader"></div>
+    <div id="loader4" class="loader"></div>
+    <div id="loader5" class="loader"></div>
+
+</div>
+<div class="content">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                &nbsp &nbsp&nbsp &nbsp
+                <button onmousedown="togglenav()" class="navbar-toggler" type="button" data-toggle="" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                &nbsp &nbsp
+                <a class="navbar-brand" href="index.html" style="font-size:24.5px; color:#818181;"><i class="fa fa-paper-plane" style="color:rgb(53, 218, 32);"></i>&nbsp &nbsp مرسل</a>
+                <div class="admin"></div>
+                <h5 style="font-size:15px;">&nbsp &nbsp Admin Name &nbsp &nbsp&nbsp &nbsp</h5>
+                <i data-toggle="modal" data-target="#myModal" class="fa fa-envelope-o" style="font-size:30px; color:rgb(53, 218, 32); cursor: pointer;" data-toggle="modal" data-target="#exampleModal"></i>
+                
+        </nav>
+
+        <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog">
+            
+                            <!-- Modal content-->
+                            <div class="modal-content" style="background-color:#fff;">
+                                <div class="modal-header">
+                                                <h4 class="modal-title" style="color: #d3d2d2">رسالة جماعية</h4>
+                                    <button type="button" class="close pull-right" data-dismiss="modal">&times;&nbsp &nbsp</button>
+                                </div>
+                                <div class="modal-body">
+                                    <h2 style="color: rgb(53, 218, 32);" class="pull-right"> : محتوى الرسالة </h2>
+                                    <form class="form-horizontal" action="includes/Signup.Inc.php" method="post" name="myForm" onsubmit="return validateForm()" enctype="multipart/form-data">
+                                        <div class="form-group">
+                                            <div class="col-sm-12">
+                                                <textarea class="form-control" id="name" name="name" style="color: black; font-size: 18px; margin-top: 20px; height: 300px; " ></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                                        <button type="submit" name="submit" onclick="validateForm" class="btn btn-default pull-left">ارسل</button>
+                                                    </div>
+                                        </form>
+                                        </div>
+                                        </div>
+                                        </div></div>
+
+
+        <div class="container-fluied">
+            <div class="row">
+                <div class="col-md-3 col-sm-12">
+                    <div class="sidebar" id="mySidebar">    
+                             <a href="index.html"><i class="fa fa-dashboard"><span style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size:15px; font-weight: bold; color: black;">&nbsp &nbspالصفحة الرئيسية</span></i></a>
+                            <hr>
+                            <a href="complaint.html"><i class="fa fa-warning"><span style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size:15px; font-weight: bold; color:black;">&nbsp &nbspالشكاوى</span></i></a>
+                            <hr>
+                            </li><a href="drivers.html"><i class="fa fa-car active"><span style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size:15px;font-weight: bold;color:black;">&nbsp &nbspالسائقين</span></i></a>
+                            <hr>
+                             <a href="users.html"><i class="fa fa-users"><span style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size:15px;font-weight: bold;color:black;">&nbsp &nbspالمستخدمين</span></i></a>
+                            <hr>
+                             <a href="travels.html"><i class="fa fa-suitcase"><span style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size:15px;font-weight: bold;color:black;">&nbsp &nbspالرحلات</span></i></a>
+                            <hr>
+                            <form action="login.html">
+                                <a href="" type="submit"><i class="fa fa-reply"><span style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size:15px;font-weight: bold;color:black;">&nbsp &nbspتسحيل الخروج</span></i></a>     
+                                 <hr>
+                         </form> 
+                                   
+                    </div>
+                    </div>
+                    <div class="col-md-9 col-sm-12 complaints" style="height: 500px; margin-top:30px;">
+
+
+                            <div class="box">
+                                    <div class="box-header">
+                                      <h3 style="color:#818181; margin-top:20px; margin-bottom:35px;" class="box-title pull-right">كشف باسماء السائقين</h3>
+                                      
+                                    </div>
+                                   
+                                    <!-- /.box-header -->
+                                    <div class="box-body">
+                                      <table id="example1" class="table table-bordered table-striped ">
+                                        <thead style="color:#adaaaa; text-align: center;">
+                                        <tr>
+                                          <th>التقييم</th>
+                                          <th>الاسم كاملا</th>
+                                          <th>الصورة</th>
+                                          <th>الحالة</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody style=" text-align: center;">
+                                            
+                                                <tr>
+                                                 <td>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star checked"></span>
+                                                        <span class="fa fa-star"></span>
+                                                        <span class="fa fa-star"></span>
+                                                 </td>
+                                                 <td><a style="color:green; text-shadow: 0.25px 0.25px 0.5px rgb(53, 218, 32);" href="driver_profile.html">مروان محمود العدوى</a></td>
+                                                 <td>
+                                                     <div class="driver-pic">
+
+                                                     </div>
+                                                 </td>
+                                                 <td><i class="fa fa-circle online"></i></td>
+                                                </tr>
+                                                <tr>
+                                                        <td> <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star checked"></span>
+                                                            <span class="fa fa-star"></span>
+                                                            <span class="fa fa-star"></span></td>
+                                                        <td><a style="color:green; text-shadow: 0.25px 0.25px 0.5px rgb(53, 218, 32);" href="driver_profile.html">احمد نصر</a></td>
+                                                        <td>
+                                                                <div class="driver-pic">
+
+                                                                    </div>  
+                                                        </td>
+                                                        <td><i class="fa fa-circle offline"></i></td>
+                                                </tr>
+                                            
+                                        </tbody>
+                                      </table>
+                                    </div>
+                                    <!-- /.box-body -->
+                                  </div>
+            </div>
+            </div>
+            </div>
+            </div>
+            <script>
+                $(function(){
+                    $(".preload").fadeOut(5000,function(){
+                        $(".content").fadeIn(500);
+                        $(".content").css("display:block");
+                    });
+                });
+            </script>
+    
+</body>
+</html>

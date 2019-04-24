@@ -1,0 +1,40 @@
+
+@media only screen and (min-width: 720px) {
+    .counter{
+        margin-left: 250px;
+    }
+  }
+  .mapouter
+  {
+      position:relative;
+      text-align:right;
+      height:100%;
+      width:100%;
+}
+.gmap_canvas{
+    overflow:hidden;
+    background:none!important;
+    height:100%;
+    width:100%;
+ }
+ iframe{
+     position:absolute;
+     left: 0;
+     top:0;
+ }
+ @media only screen and (min-width: 900px) {
+    .map{
+        margin-left: 300px;
+    }
+    
+}
+@media only screen and (max-width: 765px) {
+    .map{
+        height: 280px;
+    }
+    #container
+    {
+        padding-bottom: 12.25%;
+    } 
+    
+}

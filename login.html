@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Page Title-->
+    <title>مرسل</title>
+    <link rel="shortcut icon" type="icon" href="assets/img/icon.png" />
+    
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/additions/bootstrap/bootstrap-4.3.1/dist/css/bootstrap.min.css" />
+
+    <!--Fonts-->
+    <link rel="stylesheet" href="assets/fonts/font-awesome-4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/fonts/montserrat/css/montserrat-webfont.min.css" />
+    <link rel="stylesheet" href="assets/fonts/open-sans/open-sans.css" />
+
+     <!--Css-->
+     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/general.css" />
+     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/login.css" />
+     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/loader.css" />
+
+    <!--Jquery-->
+    <script src="assets/additions/jquery/jquery-3.2.1.min.js"></script>
+
+    <!--JavaScript-->
+    <script src="assets/js/general.js"></script>
+    <script src="assets/js/login.js"></script>
+    <style>
+            .content{
+                display: none;
+            }
+                
+        </style>
+    </head>
+    <body>
+    <div class="preload">
+            <div id="loader2" class="loader"></div>
+            <div id="loader3" class="loader"></div>
+            <div id="loader4" class="loader"></div>
+            <div id="loader5" class="loader"></div>
+    
+    </div>
+        <div class="content">
+       
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="header">
+                        <h2>اهلا بك فى لوحة تحكم</h2>
+                        <h1><i class="fa fa-paper-plane"></i>&nbsp &nbsp مرسل</h1>
+                        <h2 class="ask">من فضلك ادخل مفاتيح الدخول الخاصة بك</h2>
+                        <br>
+                        <br>
+                </div>
+
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-6">
+                   
+                    <form method="POST" action="index.html">
+                    <div class="form-group">
+                            <label for="usr">username:</label>
+                            <input type="text" class="form-control" id="usr">
+                          </div>
+                          <div class="form-group">
+                            <label for="pwd">Password:</label>
+                            <input type="password" class="form-control" id="pwd">
+                          </div>
+                          <br>
+                          <div class="form-group">
+                                <button class="btn btn-success"> &nbsp سجل &nbsp</button>
+                              </div>
+                        </form>   
+                    
+            </div>
+            <div class="col-md-2"></div>
+            
+        </div>
+    </div>
+    </div>
+    <script>
+            $(function(){
+                $(".preload").fadeOut(5000,function(){
+                    $(".content").fadeIn(500);
+                    $(".content").css("display:block");
+                });
+            });
+        </script>
+</body>
+</html>

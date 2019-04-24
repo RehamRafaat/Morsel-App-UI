@@ -1,0 +1,102 @@
+h2{
+    margin-top: 50px;
+     font-size: 40px;
+}
+h1{
+     color: #818181;
+     font-size: 50px;
+     margin-left: 50px;
+     margin-top: 30px;
+}
+i{
+    color:rgb(53, 218, 32);
+}
+.ask{
+    margin-top: 50px;
+    font-size: 22px;
+}
+@media only screen and (min-width: 720px) {
+    .form-group{
+        margin-left: -150px;
+    }
+    .btn{
+        margin-left: 42%;
+    }
+  }
+  @media only screen and (min-width: 720px) {
+    .header{
+        margin-left: 30%;
+    }
+  }
+  @media only screen and (max-width: 990px) {
+    .header{
+        margin-left: 20%;
+    }
+  }
+  @media only screen and (min-width: 1208px) {
+    .header{
+        margin-left: 35%;
+    }
+  }
+  @media only screen and (max-width: 698px) {
+    .header{
+        margin-left: 13%;
+    }
+    .btn{
+        margin-left: 42%;
+    }
+  }
+  @media only screen and (max-width: 478px) {
+    h2{
+        font-size: 22px;
+        margin-left: 19%;
+    }
+    .btn{
+        margin-left: 45%;
+    }
+    h1{
+        font-size: 37px;
+        margin-left: 20%;
+
+    }
+    .ask{
+        font-size: 16px;
+        margin-left: 9%;
+    }
+  }
+  @media only screen and (max-width: 394px) {
+    h2{
+        font-size: 19px;
+        margin-left: 19%;
+    }
+    .btn{
+        margin-left: 45%;
+    }
+    h1{
+        font-size: 32px;
+        margin-left: 20%;
+
+    }
+    .ask{
+        font-size: 13px;
+        margin-left: 11%;
+    }
+  }
+  @media only screen and (max-width: 330px) {
+    h2{
+        font-size: 19px;
+        margin-left: 10%;
+    }
+    .btn{
+        margin-left: 36%;
+    }
+    h1{
+        font-size: 32px;
+        margin-left: 14%;
+
+    }
+    .ask{
+        font-size: 12px;
+        margin-left: 5%;
+    }
+  }
